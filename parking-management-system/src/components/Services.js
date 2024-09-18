@@ -11,7 +11,7 @@ function Services() {
 
   // Fetch parking data from the backend
   useEffect(() => {
-    axios.get('http://localhost:5000/api/parking/getParking')
+    axios.get('https://parking-management-system-six.vercel.app/api/parking/getParking')
       .then(response => {
         console.log('Fetched Parking Data:', response.data); // Debugging line
 
@@ -45,7 +45,7 @@ function Services() {
       vehicles: floor.vehicles,
     }));
 
-    axios.post('http://localhost:5000/api/parking/saveParking', { floors: floorsWithFloorField })
+    axios.post('https://parking-management-system-six.vercel.app/api/parking/saveParking', { floors: floorsWithFloorField })
       .then(response => console.log('Parking data saved:', response.data))
       .catch(error => console.error('Error saving parking data:', error));
   };
