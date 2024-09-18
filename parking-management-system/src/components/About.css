@@ -1,0 +1,61 @@
+.about-page-new {
+  display: flex;
+  justify-content: center; /* Center the content horizontally */
+  padding: 2rem;
+  background-color: #f5f5f5;
+  color: #333;
+}
+
+.about-content-new {
+  display: flex;
+  align-items: center; /* Align text and image vertically */
+  width: 100%;
+  max-width: 1200px; /* Control the maximum width of the content */
+  gap: 0; /* Remove space between text and image */
+}
+
+.about-text-new,
+.about-image-new {
+  flex: 1; /* Both text and image take up equal space */
+  box-sizing: border-box; /* Ensure padding and borders are included in width */
+}
+
+.about-text-new {
+  padding-right: 1rem; /* Optional: Add a small space between text and image */
+}
+
+.about-image-new img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.about-page-new h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  color: #222;
+}
+
+.about-page-new p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  margin: 0;
+  padding: 1rem 0;
+  color: #333;
+}
+
+@media (max-width: 800px) {
+  .about-content-new {
+    flex-direction: column; /* Stack text and image vertically on smaller screens */
+  }
+
+  .about-text-new,
+  .about-image-new {
+    width: 100%; /* Make each take full width on smaller screens */
+  }
+
+  .about-text-new {
+    padding-right: 0; /* Remove padding on smaller screens */
+    margin-bottom: 1.5rem; /* Space between text and image */
+  }
+}

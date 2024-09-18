@@ -1,0 +1,71 @@
+.footer-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: #f8f8f8;
+  padding: 10px; /* Reduced padding */
+  color: #333;
+  min-height: 55vh; /* Ensure footer sticks to the bottom */
+}
+
+.footer-top {
+  display: flex;
+  justify-content: space-around;
+  padding: 10px 0; /* Reduce top and bottom padding */
+}
+
+.footer-section h3 {
+  margin-bottom: 10px; /* Reduced margin */
+}
+
+.footer-section ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-section li {
+  margin-bottom: 5px; /* Reduced margin between list items */
+  cursor: pointer;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.footer-section li:hover {
+  color: #007bff;
+  transform: translateX(10px);
+}
+
+.social-icons {
+  display: flex;
+  gap: 8px; /* Slightly reduced gap */
+  margin-top: 8px; /* Reduced margin */
+}
+
+.social-icons svg {
+  font-size: 1.3rem; /* Slightly reduced icon size */
+  color: #333;
+  transition: color 0.3s ease;
+}
+
+.social-icons svg:hover {
+  color: #007bff;
+}
+
+.footer-bottom {
+  text-align: center;
+  padding-top: 15px; /* Reduced top padding */
+  background-color: #eaeaea;
+  font-size: 0.8rem;
+  margin-top: auto; /* Push footer-bottom to the bottom */
+}
+
+.payment-icons {
+  display: flex;
+  justify-content: center;
+  gap: 8px; /* Slightly reduced gap */
+  margin-top: 8px; /* Reduced margin */
+}
+
+.payment-icons svg {
+  font-size: 1.8rem; /* Slightly reduced icon size */
+  color: #333;
+}

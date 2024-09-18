@@ -1,0 +1,265 @@
+/* Hero Section */
+.hero-section {
+  padding: 100px 20px;
+  background-image: url('https://www.bmw.com/content/dam/bmw/marketBMWCOM/bmw_com/categories/automotive-life/bmwapp-wallpaper/bawp-00-teaser-hdd.jpg?imwidth=1280');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: white;
+  text-align: left;
+  position: relative;
+  z-index: 1;
+  max-width: 100%;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100vh; /* Make the section full height */
+}
+
+.hero-section:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5); /* Dark overlay to ensure readability */
+  z-index: -1;
+}
+
+.hero-section h1 {
+  font-size: 3rem;
+  font-weight: 700;
+  margin-bottom: 20px;
+  max-width: 600px;
+}
+
+.hero-text {
+  margin: 20px 0;
+  font-size: 1.5rem;
+  max-width: 600px; /* Limit the text width for better readability */
+}
+
+.hero-section button {
+  font-size: 1.25rem;
+  margin-top: auto; /* Ensures button is pushed to the bottom */
+  align-self: flex-start; /* Align button to the left side */
+}
+
+@media (min-width: 768px) {
+  .hero-section {
+    padding: 150px 40px; /* Add more padding for larger screens */
+  }
+
+  .hero-section h1 {
+    font-size: 4rem; /* Increase font size on larger screens */
+  }
+
+  .hero-text {
+    font-size: 1.75rem;
+  }
+
+  .hero-section button {
+    font-size: 1.5rem; /* Increase button size for larger screens */
+  }
+}
+
+/* Services Section */
+/* Services Section */
+.services-section {
+  padding: 60px 0;
+  background-color: #f3f3f3;
+}
+
+.services {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 15px; /* Reduced gap for closer cards */
+}
+
+.service-card {
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Professional shadow effect */
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth hover effect */
+  padding: 30px 20px;
+  width: 100%;
+  max-width: 280px; /* More compact width */
+  text-align: center;
+  position: relative;
+  margin: 0 auto;
+}
+
+.service-card:hover {
+  transform: translateY(-8px); /* Subtle lift */
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15); /* Slightly darker shadow on hover */
+}
+
+.service-card i {
+  font-size: 35px;
+  margin-bottom: 20px;
+  color: #007bff; /* Refined blue for icons */
+  transition: color 0.3s ease, transform 0.3s ease; /* Smooth transition for hover */
+}
+
+.service-card h4 {
+  font-size: 1.4rem;
+  margin-bottom: 10px;
+  font-weight: 700;
+  color: #333333; /* Darker text for a sharper look */
+}
+
+.service-card p {
+  font-size: 1rem;
+  color: #555555; /* Subtle, readable gray for description */
+  line-height: 1.6;
+  margin-bottom: 0;
+}
+
+.service-card:hover i {
+  color: #0056b3; /* Darker blue on hover */
+  transform: scale(1.1); /* Slightly larger icon on hover */
+}
+
+/* Hover Effect for Cards */
+.service-card:hover h4 {
+  color: #0056b3; /* Darker blue for title on hover */
+}
+
+/* Responsive layout for smaller screens */
+@media (max-width: 768px) {
+  .services {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .service-card {
+    width: 80%;
+    margin-bottom: 30px;
+  }
+}
+
+.icon-safe-secure:before {
+  content: '\f023'; /* Add a FontAwesome icon */
+  font-family: FontAwesome;
+  font-size: 30px;
+  display: block;
+  margin-bottom: 10px;
+  color: #28a745;
+}
+
+.icon-concierge:before {
+  content: '\f2c2'; /* Add a FontAwesome icon */
+  font-family: FontAwesome;
+  font-size: 30px;
+  display: block;
+  margin-bottom: 10px;
+  color: #28a745;
+}
+
+.icon-close-handy:before {
+  content: '\f0f3'; /* Add a FontAwesome icon */
+  font-family: FontAwesome;
+  font-size: 30px;
+  display: block;
+  margin-bottom: 10px;
+  color: #28a745;
+}
+
+.icon-car-wash:before {
+  content: '\f4d7'; /* Add a FontAwesome icon */
+  font-family: FontAwesome;
+  font-size: 30px;
+  display: block;
+  margin-bottom: 10px;
+  color: #28a745;
+}
+
+/* Why Choose Us Section */
+.why-choose-section {
+  background-color: #2c3e50;
+  padding: 70px 0;
+}
+
+.why-choose-section h2 {
+  font-size: 2rem;
+  margin-bottom: 30px;
+  color: #ffffff;
+}
+
+.features-list {
+  display: flex;
+  justify-content: space-between;
+  list-style-type: none;
+  padding: 0;
+}
+
+.feature-card {
+  background-color: #1a2733;
+  border-radius: 8px;
+  width: 30%;
+  padding: 20px;
+  text-align: center;
+  color: #555555;
+  transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease, color 0.3s ease;
+  position: relative;
+}
+
+.feature-card h4 {
+  margin-top: 10px;
+  font-size: 1.25rem;
+  color: #ffffff;
+}
+
+.feature-card p {
+  color: #ffffff;
+}
+
+/* Default styling for all cards */
+.feature-card-number {
+  font-size: 3rem;
+  font-weight: 700;
+  color: rgba(255, 255, 255, 0.2); /* Faded white for inactive state */
+}
+
+/* Active card when hovered */
+.feature-card:hover {
+  background-color: #2c3e50; /* Darker background when hovered */
+  border: 2px dashed #28a745; /* Green border on hover */
+  color: #28a745; /* Green text for active state */
+  transform: scale(1.05); /* Slight zoom on hover */
+}
+
+.feature-card:hover .feature-card-number {
+  color: #28a745; /* Green number when hovered */
+}
+
+.feature-card:hover h4, 
+.feature-card:hover p {
+  color: #28a745; /* Green text when hovered */
+}
+
+/* Other cards (non-hovered) should fade out */
+.features-list:hover .feature-card {
+  opacity: 0.5; /* Dim all cards by default on hover */
+}
+
+.features-list:hover .feature-card:hover {
+  opacity: 1; /* Keep the hovered card bright */
+}
+
+/* Responsive layout for smaller screens */
+@media (max-width: 768px) {
+  .features-list {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .feature-card {
+    width: 80%;
+    margin-bottom: 20px;
+  }
+}
+
